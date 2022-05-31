@@ -1,6 +1,6 @@
 const valorTicket=200
 function calculoVenta(){
-    let cant=document.getElementById("cant").value
+    let cant=document.getElementById("cantidad").value
     let categoria= document.getElementById("categoria").value
     let descuento
     if (categoria==1)
