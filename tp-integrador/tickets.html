@@ -98,13 +98,13 @@
     <div class="row">
       <div class="col-md-6 mb-3">
         <label class="form-label" for="cantidad">Cantidad</label>
-  <input class="form-control" placeholder="" id="cantidad" type="text">
+  <input class="form-control" placeholder="" id="cantidad" type="text" onkeyup="calculoVenta()">
       </div>
       <div class="col-md-6 mb-3">
         <label class="form-label" for="categoria">Categoría</label>
-  <select class="form-select" aria-label="Default select example">
-  <option selected="">Seleccione...</option>
-  <option value="1">Estudiante</option>
+  <select class="form-select" aria-label="Default select example" id="categorias" onchange="calcularTotal()">
+  
+  <option selected="" value="1">Estudiante</option>
   <option value="2">Trainee</option>
   <option value="3">Junior</option>
 </select>
