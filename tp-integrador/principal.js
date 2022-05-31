@@ -12,3 +12,4 @@ function calculoVenta(){
     let total=valorTicket*cant
     total -= total*descuento/100
     document.getElementById("total").innerHTML=total
+}
