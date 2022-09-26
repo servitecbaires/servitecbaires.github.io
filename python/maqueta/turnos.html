@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Turnero Python</title>
+		<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+	</head>
+	<body>
+		<header>
+			<h1>Recepcion</h1> <p>Usuario: Prueba</p>
+                <nav>
+                    <a href="turnos.html">Turnos</a>
+                    <a href="/pacientes">ABM Pacientes</a>
+                    <a href="/profesionales">ABM Profesionales</a>
+                    <a href="/consultorios">Consultorios</a>
+                    <a href="maqueta.html">Cerrar Sesión</a>
+                   
+                </nav>
+                <hr>
+                <nav>
+                    <a href="nuevo-turno.html">Nuevo Turno</a>
+                    <a href="consultar-turno.html">Consultar Turno</a>
+                </nav>
+		</header>
+
+		<main>
+            <p>
+                <label>DNI</label>
+                <input type="number" name="dni" required="">
+            </p>
+            <p>
+                <label>Apellido Paciente</label>
+                <input type="text" name="apellido">
+            </p>
+            <p>
+                <label>Nombres</label>
+                <input type="text" name="Nombres">
+            </p>
+            <p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha">
+            </p>
+            <p>
+                <label for="horario">Horario:</label>
+                <input type="time" id="horario" name="horario" min="09:00" max="18:00" step="600" required>
+            
+            <p>
+                <label>Obra Social</label>
+                <select>
+                    <option value="" selected disabled>Elija una opción</option>
+                    <option value="1">OSECAC</option>
+                    <option value="2">UP</option>
+                    <option value="3">OSPE</option>
+                    <option value="4">OSDEPYM</option>
+                    <option value="5">SANIDAD</option>
+                </select>
+            </p>
+            <p>
+                <label>Método de Pago</label>
+                <label><input name="type" type="radio" value="efectivo" />Efectivo</label> 
+                <label><input name="type" type="radio" value="transferencia" />Transferencia</label> 
+                <label><input name="type" type="radio" value="mp" />MP</label>
+            </p>
+            <p>
+                <label>Valor</label>
+                <input type="number" name="valor" required="">
+            </p>
+            <p>
+                <label>Notas para el paciente</label>
+                <textarea rows="6"></textarea>
+            </p>
+			<button type="submit">Confirmar e Imprimir</button>
+		</main>
+
+		<footer>
+			<p>maquetado con simplecss.org</p>
+		</footer>
+	</body>
+</html>
