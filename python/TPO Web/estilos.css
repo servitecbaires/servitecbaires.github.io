@@ -620,4 +620,4 @@
   }
   
   /*RemixIcon Styles*/
-  i{margin:0 1rem;}
+  nav a>i:first-child{margin-right:0 1rem;}
