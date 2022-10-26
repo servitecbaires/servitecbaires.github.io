@@ -113,7 +113,7 @@
   }
   
   /* Format headers */
-  h1.isologotipo{font-family: dashley;font-size: 6rem;}
+  h1.isologotipo{font-family: dashley;font-size: 6rem;color:red;}
   h1 {
     font-size: 3rem;
   }
