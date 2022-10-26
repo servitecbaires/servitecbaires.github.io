@@ -347,7 +347,7 @@
     padding-top: 0;
   }
   /*Don't put separators when first header + section */
-  header +section:first-child{border-top:none}  
+  header +section:first-child {border-top:none}  
 
   /* Don put separators when section + footer */
   section + footer {
