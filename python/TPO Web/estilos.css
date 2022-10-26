@@ -1,5 +1,9 @@
 /* Global variables. */
 :root {
+    /* Set Logo Font to Dashley@fontlibrary.org*/
+    @font-face {
+      font-family: "dashley";
+      src: url("recursos/dashley.woff");}
     /* Set sans-serif & mono fonts */
     --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
       "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
