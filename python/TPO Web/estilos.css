@@ -342,19 +342,16 @@
   
   /* Don't double separators when chaining sections */
   section + section,
-  section:first-child, section:only-child {
+  section:first-child, section:only-of-type {
     border-top: 0;
     padding-top: 0;
   }
   /*Don't put separators when first header + section */
-  header +section:first-child {border-top:none}  
+  header+section {border-top:none}  
 
-  /* Don put separators when section + footer */
-  section + footer {
-    border-top: none;
-    margin-top: 0;}
+  /* Don't put separators when section + footer and last child */
 
-  section:last-child, section:only-child {
+  section:last-child, section:only-of-type {
     border-bottom: 0;
     padding-bottom: 0;
   }
