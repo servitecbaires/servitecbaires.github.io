@@ -12,7 +12,7 @@ destinado para ello.
 bien de Google Fonts.
 - [+] Tener al menos una página totalmente responsive con 3 puntos de corte para 3
 tamaños de dispositivos distintos.
-- [ ] Incorporar al menos una animación, transformación o una transición (se deberá
+- [x] Incorporar al menos una animación, transformación o una transición (se deberá
 indicar en qué parte del sitio web fue incorporada la animación).
 - [x] Poseer una estructura HTML maquetada con Flexbox y/o Grid.
 - [ ] Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al
