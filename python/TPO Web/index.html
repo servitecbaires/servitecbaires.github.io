@@ -120,13 +120,18 @@
     <script>
         //Función anónima
         (function(){
-            var formulario = document.getElementsByName('formulario')[0], // toma los elementos dentro del id 'formulario' y los coloca en un array en la variable 'formulario'
-                elementos = formulario.elements, // no se que hace
-                boton = document.getElementById('boton'); // no se que hace
+            var formulario = document.getElementsByName('formulario')[0], 
+            // toma los elementos dentro del id 'formulario' y los coloca en un array en la variable 'formulario'
+                elementos = formulario.elements, 
+                // no se que hace
+                boton = document.getElementById('boton'); 
+                // no se que hace
 
             var validarNombre = function(e){
-            if (formulario.nombre.value == 0){ //chequea que el value 'nombre' no esté vacío
-                alert("Completa el campo nombre"); // escribe la alerta en pantalla
+            if (formulario.nombre.value == 0){ 
+                //chequea que el value 'nombre' no esté vacío
+                alert("Completa el campo nombre"); 
+                // escribe la alerta en pantalla
                 e.preventDefault(); 
                 //https://www.w3schools.com/jsref/event_preventdefault.asp
                 //Evita que un enlace abra la URL
