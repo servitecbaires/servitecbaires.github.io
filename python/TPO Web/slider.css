@@ -22,6 +22,9 @@
     padding: 10px;
   }
   
+  /* Corregir el overflow de los parrafos*/
+  .hslide p{width: 85%;}
+
   /* (D) SLIDE ANIMATION */
   @keyframes slideh {
     /* (D0) THE IDEA - USE KEYFRAMES TO SHIFT SLIDES *
