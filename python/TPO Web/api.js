@@ -6,7 +6,7 @@ createApp({
         data() {
     return {
         
-        url: 'https://dummyjson.com/quotes?limit=3&skip=10',
+        url: 'https://dummyjson.com/quotes?limit=4&skip=10',
         citas: []
         }
     },
