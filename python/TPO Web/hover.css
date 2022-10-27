@@ -1,0 +1,14 @@
+.hover-red {
+  line-height: 1.2em;
+  color: #0000;
+  text-shadow: 
+    0 0 var(--text), 
+    0 1.2em red;
+  overflow: hidden;
+  transition: .3s;
+}
+.hover-red:hover {
+  text-shadow: 
+    0 -1.2em var(--text), 
+    0 0 red;
+}
