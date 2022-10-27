@@ -98,7 +98,7 @@
    
     <section id="contacto">
         <h1>Contacto</h1>
-        <form action="">
+        <form action="" id="formulario" method="get">
             <p><strong>Dejanos un mensaje</strong></p>
             <p><label for="nombre">Tu Nombre</label>
             <input type="text" name="nombre" id="nombre" required></p>
@@ -106,7 +106,7 @@
             <input type="email" name="email" id="email" required></p>
             <p><label for="mensaje">Tu Mensaje</label>
             <textarea name="mensaje" id="mensaje" rows="10" required></textarea></p>
-            <p><button type="submit">Enviar</button></p>
+            <p><button id="boton" type="submit">Enviar</button></p>
         </form>
     </section>
     <footer>
@@ -118,6 +118,46 @@
         </header>
     </footer>
 
+    <script>
+        //Función anónima
+        (function(){
+            var formulario = document.getElementsByName('formulario')[0], // toma los elementos dentro del id 'formulario' y los coloca en un array en la variable 'formulario'
+                elementos = formulario.elements, // no se que hace
+                boton = document.getElementById('boton'); // no se que hace
 
+            var validarNombre = function(e){
+            if (formulario.nombre.value == 0){ //chequea que el value 'nombre' no esté vacío
+                alert("Completa el campo nombre"); // escribe la alerta en pantalla
+                e.preventDefault(); 
+                //https://www.w3schools.com/jsref/event_preventdefault.asp
+                //Evita que un enlace abra la URL
+            }
+            };
+            var validarEmail = function(e){
+            if (formulario.email.value == 0){
+                alert("Completa el email");
+                e.preventDefault(); 
+                //https://www.w3schools.com/jsref/event_preventdefault.asp
+                //Evita que un enlace abra la URL
+            }
+            };
+            var validarMensaje = function(e){
+            if (formulario.mensaje.value == 0){
+                alert("Escribe tu Mensaje");
+                e.preventDefault(); 
+                //https://www.w3schools.com/jsref/event_preventdefault.asp
+                //Evita que un enlace abra la URL
+            }
+            };
+            // rellena la variable 'validar' con una función anónima que contiene un callback a las funciones anteriores
+            var validar = function(e){
+                validarNombre(e);
+                validarEmail(e);
+                validarMensaje(e);
+            };
+            formulario.addEventListener("submit", validar); 
+            // escucha el evento 'submit' dentro del elemento 'formulario' y dispara la variable/función 'validar' (que está rellena de callbacks)
+        }())
+    </script>
 </body>
 </html>
