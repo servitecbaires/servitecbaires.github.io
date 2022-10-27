@@ -211,14 +211,15 @@
             };
             var validarEmail = function(e){
             if (formulario.email.value == 0){
-                alert("Completa el email");
+                alert("La direccion de email no es válida");
                 e.preventDefault(); 
                 //https://www.w3schools.com/jsref/event_preventdefault.asp
                 //Evita que un enlace abra la URL
             }
             };
             var validarMensaje = function(e){
-            if (formulario.mensaje.value == 0){
+            var validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+            if (validEmail.test(formulario.mensaje.value) == false){
                 alert("Escribe tu Mensaje");
                 e.preventDefault(); 
                 //https://www.w3schools.com/jsref/event_preventdefault.asp
