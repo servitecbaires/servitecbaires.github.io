@@ -2,15 +2,15 @@
 
 ## Consignas:
 
-- [ ] Poseer al menos 4 páginas html, siendo su temática libre. En caso de ser un Sitio
+- [+] Poseer al menos 4 páginas html, siendo su temática libre. En caso de ser un Sitio
 Web estilo One Page, el mismo deberá tener al menos 5 secciones.
 - [x] Utilizar etiquetas semánticas para estructurar el sitio.
-- [ ] Contener un formulario de contacto con validación realizada mediante Javascript.
+- [+] Contener un formulario de contacto con validación realizada mediante Javascript.
 Opcional: el formulario podrá enviar un email utilizando algún servicio externo
 destinado para ello.
 - [x] Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
 bien de Google Fonts.
-- [ ] Tener al menos una página totalmente responsive con 3 puntos de corte para 3
+- [+] Tener al menos una página totalmente responsive con 3 puntos de corte para 3
 tamaños de dispositivos distintos.
 - [ ] Incorporar al menos una animación, transformación o una transición (se deberá
 indicar en qué parte del sitio web fue incorporada la animación).
