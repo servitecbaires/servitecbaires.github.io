@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 	<link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="slider.css">
 </head>
 <body>
     <header>
@@ -115,6 +116,18 @@
             <textarea name="mensaje" id="mensaje" rows="10" ></textarea></p>
             <p><button id="boton" type="submit">Enviar</button></p>
         </form>
+    </section>
+    <section id="app">
+        <h2 class="hover-red">Lo que escuchás al aire</h2>
+        <div class="hwrap">
+            <div class="hmove">
+                <blockquote v-for="cita in citas" class="hslide">
+                    <p>{{cita.quote}}</p>
+                    <p><cite>{{cita.author}}</cite></p>
+                </blockquote> 
+                
+            </div>
+        </div>
     </section>
     <footer>
         <header>
