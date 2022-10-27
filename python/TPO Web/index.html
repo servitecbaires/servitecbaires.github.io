@@ -110,7 +110,7 @@
             <p><strong>Dejanos un mensaje</strong></p>
             <p><label for="nombre">Tu Nombre</label>
             <input type="text" name="nombre" id="nombre" ></p>
-            <p><label for="mail">Tu Email</label>
+            <p><label for="email">Tu Email</label>
             <input type="email" name="email" id="email" ></p>
             <p><label for="mensaje">Tu Mensaje</label>
             <textarea name="mensaje" id="mensaje" rows="10" ></textarea></p>
@@ -130,7 +130,7 @@
         </div>
     </section>
 
-    <form action="" name="formulario" method="get">
+    <form action="" name="formulariob" method="get">
         <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre:">
         <br>
         <input type="radio" name="sexo" id="hombre" value="Hombre"> Hombre
@@ -154,12 +154,12 @@
         //Fuente: https://www.youtube.com/watch?v=VLFBHnkC-vc
         (function(){
             //Variables
-            var formulario = document.getElementsByName('formulario')[0],
-                elementos = formulario.elements,
+            var formulariob = document.getElementsByName('formulariob')[0],
+                elementos = formulariob.elements,
                 boton = document.getElementById('btn');
 
             var validarNombre = function(e){
-                if (formulario.nombre.value == 0){
+                if (formulariob.nombre.value == 0){
                     alert("Completa el campo nombre");
                     e.preventDefault();
                     //https://www.w3schools.com/jsref/event_preventdefault.asp
@@ -168,8 +168,8 @@
             };
 
             var validarRadio = function(e){
-                if (formulario.sexo[0].checked == true || 
-                    formulario.sexo[1].checked == true){
+                if (formulariob.sexo[0].checked == true || 
+                    formulariob.sexo[1].checked == true){
                 } else{
                     alert("Completa el campo sexo");
                     e.preventDefault();
@@ -177,7 +177,7 @@
             };
             
             var validarCheckbox = function(e){
-                if (formulario.terminos.checked == false){
+                if (formulariob.terminos.checked == false){
                     alert("Acepta los términos y condiciones");
                     e.preventDefault();
                 }
@@ -188,7 +188,7 @@
                 validarRadio(e);
                 validarCheckbox(e);
             };
-            formulario.addEventListener("submit", validar);
+            formulariob.addEventListener("submit", validar);
         }())
     </script>
 
