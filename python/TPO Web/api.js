@@ -1,3 +1,4 @@
+
 const { createApp } = Vue  //creo un objeto VUE llamdo createApp
 
 
@@ -14,7 +15,7 @@ createApp({
             const res = await fetch(url);
             data = await res.json();
             // console.log(data.results);
-            this.citas = data.results;
+            this.citas = data.quotes;
             // await fetch(url)
             //     .then(response => response.json())
             //     .then(data => {
